@@ -1,0 +1,38 @@
+suppliers:
+    supData: Array(21)
+        0:
+        category: "Insulating Glass"
+        color: "Blue"
+        price_per_sqft: 50
+        product: "Architectural Glass"
+        sub_category: "Insulating Glass"
+        thickness: "1/2"
+
+
+projects:
+    projData: Array(50)
+        0:
+        city: "Janymouth"
+        createdAt: "2022-06-26T06:48:06.644Z"
+        customer: "Salvador Gottlieb"
+        id: "1"
+        state: "South Dakota"
+        status: "deposit paid"
+        streetAddress: "01229 Stroman Spurs"
+        streetName: "Rebeca Center"
+        zipcode: "71950-0396"
+
+
+{
+      id: project.id,
+      created_date: project.createdAt,
+      customer: {
+        name: project.customer,
+        street: project.streetAddress,
+        city: project.city,
+        state: project.state,
+        streetName: project.streetName,
+        zip: project.zip,
+      },
+      status: project.status,
+    }
